@@ -1,0 +1,6 @@
+[2024-11-05 15:25:42 +0800] [82751] [INFO] Starting gunicorn 20.1.0
+[2024-11-05 15:25:42 +0800] [82751] [INFO] Listening at: unix:./app.sock (82751)
+[2024-11-05 15:25:42 +0800] [82751] [INFO] Using worker: gevent
+[2024-11-05 15:25:42 +0800] [82781] [INFO] Booting worker with pid: 82781
+[2024-11-05 15:25:42 +0800] [82782] [INFO] Booting worker with pid: 82782
+[2024-11-05 15:25:42 +0800] [82783] [INFO] Booting worker with pid: 82783
