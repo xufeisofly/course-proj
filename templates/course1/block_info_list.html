@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <ul class="list-unstyled">
+        {% for block_info in block_infos %}
+        <li style="margin-top: 20pt;">
+            <div class="card">
+                <div class="card-body container text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+                    <div class="card-title">Elect Height: {{ block_info.elect_height }}</div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">view: {{ block_info.view }}</li>
+                    <li class="list-group-item">leader idx: {{ block_info.leader_idx }}</li>
+                    <li class="list-group-item">partial signs: {{ block_info.partial_sign_map }}</li>
+                    <li class="list-group-item">reconstructed sign: {{ block_info.reconstructed_sign }}</li>
+                  </ul>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

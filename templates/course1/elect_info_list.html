@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <ul class="list-unstyled">
+        {% for elect_info in elect_infos %}
+        <li style="margin-top: 20pt;">
+            <div class="card">
+                <div class="card-body container text-primary-emphasis bg-primary-subtle border border-primary-subtle">
+                    <div class="card-title">Elect Height: {{ elect_info.elect_height }}</div>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">node idx: {{ elect_info.member_idx }}</li>
+                    <li class="list-group-item">local sk: {{ elect_info.local_sk }}</li>
+                    <li class="list-group-item">common pk: {{ elect_info.common_pk }}</li>
+                  </ul>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}
