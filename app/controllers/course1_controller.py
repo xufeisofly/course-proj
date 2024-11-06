@@ -4,7 +4,7 @@ from app.util.clickhouse import ck_client
 from collections import namedtuple
 
 BlsElectInfo = namedtuple('BlsElectInfo', ['id', 'elect_height', 'shard_id', 'member_idx', 'contribution_map', 'local_sk', 'common_pk'])
-BlsBlockInfo = namedtuple('BlsBlockInfo', ['id', 'elect_height', 'view', 'shard_id', 'leader_idx', 'partial_sign_map', 'reconstructed_sign', 'common_pk'])
+BlsBlockInfo = namedtuple('BlsBlockInfo', ['id', 'elect_height', 'view', 'shard_id', 'leader_idx', 'msg_hash', 'partial_sign_map', 'reconstructed_sign', 'common_pk'])
 
 
 def get_bls_elect_info_list(limit: int = 10, offset: int = 0):

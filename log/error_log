@@ -241,3 +241,15 @@
 [2024-11-06 09:15:42 +0800] [90121] [INFO] Worker exiting (pid: 90121)
 [2024-11-06 09:15:42 +0800] [90124] [INFO] Booting worker with pid: 90124
 [2024-11-06 09:15:42 +0800] [90125] [INFO] Booting worker with pid: 90125
+[2024-11-06 12:37:10 +0800] [82751] [CRITICAL] WORKER TIMEOUT (pid:90120)
+[2024-11-06 12:37:10 +0800] [82751] [CRITICAL] WORKER TIMEOUT (pid:90124)
+[2024-11-06 12:37:10 +0800] [82751] [CRITICAL] WORKER TIMEOUT (pid:90125)
+[2024-11-06 12:37:10 +0800] [90125] [INFO] Worker exiting (pid: 90125)
+[2024-11-06 12:37:10 +0800] [90124] [INFO] Worker exiting (pid: 90124)
+[2024-11-06 12:37:10 +0800] [90120] [INFO] Worker exiting (pid: 90120)
+[2024-11-06 12:37:10 +0800] [4571] [INFO] Booting worker with pid: 4571
+[2024-11-06 12:37:10 +0800] [4574] [INFO] Booting worker with pid: 4574
+[2024-11-06 12:37:10 +0800] [4575] [INFO] Booting worker with pid: 4575
+[2024-11-06 13:47:06 +0800] [82751] [CRITICAL] WORKER TIMEOUT (pid:4571)
+[2024-11-06 13:47:07 +0800] [4571] [INFO] Worker exiting (pid: 4571)
+[2024-11-06 13:47:07 +0800] [5478] [INFO] Booting worker with pid: 5478
