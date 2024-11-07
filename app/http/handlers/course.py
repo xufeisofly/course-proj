@@ -1,9 +1,13 @@
 # coding: utf-8
 
-from flask import Blueprint, jsonify, render_template
+from flask import Blueprint, jsonify, render_template, redirect, url_for
 from app.controllers.course1_controller import get_bls_elect_info_list, get_bls_block_info_list
 
 course_router = Blueprint('course_router', __name__)
+
+@course_router.route('/')
+def index():
+    return redirect(url_for('course_router.elect_info_list'))
 
 @course_router.route('/course1/elect_info_list')
 def elect_info_list():

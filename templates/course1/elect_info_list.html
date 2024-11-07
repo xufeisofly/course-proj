@@ -7,13 +7,13 @@
         <li style="margin-top: 20pt;">
             <div class="card">
                 <div class="card-body container text-primary-emphasis bg-primary-subtle border border-primary-subtle">
-                    <div class="card-title">Elect Height: {{ elect_info.elect_height }}</div>
+                    <div class="card-title">EPOCH: {{ elect_info.elect_height }} - NODE: {{ elect_info.member_idx }}</div>
                 </div>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">node idx: {{ elect_info.member_idx }}</li>
-                    <li class="list-group-item">contributions: {{ elect_info.contribution_map }}</li>
-                    <li class="list-group-item">local sk: {{ elect_info.local_sk }}</li>
-                    <li class="list-group-item">common pk: {{ elect_info.common_pk }}</li>
+                    <li class="list-group-item">Contributions: {{ elect_info.contribution_map }}</li>
+                    <li class="list-group-item">Sk Share: {{ elect_info.local_sk }}</li>
+                    <li class="list-group-item">Common Pk: {{ elect_info.common_pk }}</li>
+                    <li class="list-group-item">Create Time: {{ elect_info.update }}</li>
                   </ul>
             </div>
         </li>

@@ -19,9 +19,6 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="{{ url_for('course_router.elect_info_list') }}">DKG</a>
               </li>
               <li class="nav-item">
@@ -32,7 +29,7 @@
         </div>
     </nav>
     {% block content %}{% endblock %}
-    <footer>
+    <footer class="container">
         <small>&copy; 2024 <a href="">Shardora</a></small>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
