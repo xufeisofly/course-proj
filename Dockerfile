@@ -1,6 +1,6 @@
 FROM python:3.9.6
-COPY . /course-proj
-WORKDIR /course-proj
+COPY . /course_proj
+WORKDIR /course_proj
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
@@ -17,7 +17,7 @@ COPY conf/nginx/nginx.conf /etc/nginx/nginx.conf
 RUN rm /etc/nginx/sites-available/default
 RUN rm /etc/nginx/sites-enabled/default
 COPY conf/nginx/sites-available /etc/nginx/sites-available
-RUN ln -s /etc/nginx/sites-available/tvs_backend /etc/nginx/sites-enabled
+RUN ln -s /etc/nginx/sites-available/course_proj /etc/nginx/sites-enabled
 
 EXPOSE 80
 CMD ["sh", "./entrypoint.sh"]
