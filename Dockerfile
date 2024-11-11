@@ -1,6 +1,6 @@
 FROM python:3.9.6
-COPY . /tvs_backend
-WORKDIR /tvs_backend
+COPY . /course-proj
+WORKDIR /course-proj
 
 RUN rm /bin/sh && ln -s /bin/bash /bin/sh
 
