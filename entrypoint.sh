@@ -1,4 +1,6 @@
 #!/bin/bash
+source venv/bin/activate
+
 gunicorn --workers 3 \
          --bind unix:./app.sock \
          -c conf/gunicorn/gunicorn.py \
